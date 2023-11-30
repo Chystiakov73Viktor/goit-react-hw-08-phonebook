@@ -1,0 +1,25 @@
+.contaner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: rgb(52, 52, 109);
+}
+.button {
+  min-width: 100px;
+  padding: 0;
+  color: rgb(52, 52, 109);
+  border: 1px solid rgb(52, 52, 109);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  /* text-transform: uppercase; */
+  background-color: transparent;
+}
