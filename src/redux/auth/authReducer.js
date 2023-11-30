@@ -33,6 +33,12 @@ const authSlice = createSlice({
         state.isLoggedIn = true;
         state.isRefreshing = false;
       })
+      .addCase(refresh.pending, (state) => {
+        state.isFetchingCurrentUser = true;
+      })
+      .addCase(refresh.rejected, (state) => {
+        state.isFetchingCurrentUser = false;
+      })
 
       .addMatcher(isAnyOf(...getRequests('fulfilled')), handleFulfilled)
       .addMatcher(isAnyOf(...getRequests('pending')), handlePending)

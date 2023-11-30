@@ -82,7 +82,7 @@ const Register = () => {
       </form>
       {error !== null && error !== '' && (
         <p className={css.title}>
-          Sorry, check your data, maybe you are registered, if so, log in!
+          Sorry, please register!
         </p>
       )}
     </>

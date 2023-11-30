@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logIn } from 'redux/auth/authOperations';
 import { useForm } from 'react-hook-form';
 import css from './Login.module.css';
-import { selectAuthError, selectToken } from 'redux/auth/authSelectors';
+import { selectAuthError } from 'redux/auth/authSelectors';
 
 const Login = () => {
   const {
@@ -18,7 +18,6 @@ const Login = () => {
   };
 
   const error = useSelector(selectAuthError);
-  const token = useSelector(selectToken);
 
   return (
     <>
@@ -66,7 +65,7 @@ const Login = () => {
           Log in
         </button>
       </form>
-      {token === null && error !== null && (
+      {error !== null && error !== '' && (
         <p className={css.title}>Sorry, this user is not registered!</p>
       )}
     </>
