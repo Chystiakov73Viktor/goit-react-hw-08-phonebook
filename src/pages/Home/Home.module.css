@@ -1,0 +1,20 @@
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  /* top: 610px;
+  left: 196px; */
+  font-family: 'Oxygen', sans-serif;
+  color: rgb(52, 52, 109);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+.img {
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+}
