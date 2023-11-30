@@ -30,7 +30,8 @@ const authSlice = createSlice({
       })
       .addCase(refresh.fulfilled, (state, action) => {
         state.user = { name: action.payload.name, email: action.payload.email };
-        state.isRefreshing = true;
+        state.isLoggedIn = true;
+        state.isRefreshing = false;
       })
 
       .addMatcher(isAnyOf(...getRequests('fulfilled')), handleFulfilled)

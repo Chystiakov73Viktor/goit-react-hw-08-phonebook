@@ -44,3 +44,8 @@
 .errorText {
   color: red;
 }
+
+.title {
+  margin-top: 10px;
+  text-align: center;
+}
